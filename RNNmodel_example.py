@@ -18,8 +18,8 @@ demo_model = create_RNN(2,1,(3,1),activation=['linear','linear'])
 wx = demo_model.get_weights()[0] # wx = Weights for the input(x) units
 wh = demo_model.get_weights()[1] # wh = Weights for the hidden(h) units
 bh = demo_model.get_weights()[2] # bh = Bias for the hidden units
-wy = demo_model.get_weights()[3] # wy = 
-by = demo_model.get_weights()[4]
+wy = demo_model.get_weights()[3] # wy = Weight for the dense layer
+by = demo_model.get_weights()[4] # by = Bias for the dense layer
  
 print('wx = ', wx, ' wh = ', wh, ' bh = ', bh, ' wy =', wy, 'by = ', by)
 
